@@ -1,0 +1,29 @@
+{
+  "name": "blinko-google-keep-importer",
+  "version": "0.0.1",
+  "description": "Import Google Keep notes directly into Blinko with automatic tag conversion",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blinko",
+    "plugin",
+    "google-keep",
+    "import"
+  ],
+  "author": "pascalhorn98@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Techcraftde/blinko-google-keep-importer.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.6"
+  }
+}
