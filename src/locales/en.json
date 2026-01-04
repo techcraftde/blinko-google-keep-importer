@@ -1,0 +1,73 @@
+{
+  "toolbar": {
+    "tooltip": "Import Google Keep notes"
+  },
+  "dialog": {
+    "title": "Google Keep import",
+    "subtitle": "Upload your Google Takeout ZIP to move notes, labels and attachments straight into Blinko.",
+    "dropzone": {
+      "title": "Select Google Takeout ZIP",
+      "instructions": "Drag your exported file here or click to choose it.",
+      "cta": "Choose file",
+      "hint": "Only original ZIP exports from Google Takeout → Keep are supported."
+    },
+    "summary": {
+      "title": "Analysis",
+      "notes": "importable notes",
+      "labels": "labels detected",
+      "skipped": "Skipped",
+      "file": "Selected file",
+      "lastModified": "Last modified",
+      "analyzedAt": "Analysed"
+    },
+    "status": {
+      "idle": "Select a ZIP file",
+      "parsing": "Processing ZIP …",
+      "ready": "Ready to import",
+      "importing": "Importing notes …",
+      "completed": "Import finished",
+      "error": "Import failed"
+    },
+    "instructions": {
+      "title": "How the import works",
+      "export": "Visit takeout.google.com and select Google Keep.",
+      "zip": "Export as ZIP and include both JSON data and media attachments.",
+      "import": "Drop the ZIP here or select it with the button to start importing."
+    },
+    "errors": {
+      "invalidFile": "Please choose a ZIP file exported from Google Keep.",
+      "noNotes": "No importable notes were found inside this archive.",
+      "generic": "Something went wrong while parsing the export."
+    },
+    "progress": {
+      "currentNote": "Current note"
+    },
+    "skipped": {
+      "title": "Skipped notes",
+      "reason": {
+        "trashed": "Note is in the trash",
+        "empty": "No content available",
+        "error": "Could not parse this note"
+      },
+      "empty": "No skipped notes",
+      "more": "more"
+    },
+    "logs": {
+      "title": "Import log",
+      "empty": "No import started yet"
+    },
+    "buttons": {
+      "import": "Import notes",
+      "reset": "Reset",
+      "close": "Close"
+    },
+    "toast": {
+      "importPartial": "Finished with warnings – some notes could not be imported.",
+      "importSuccess": "All notes were imported successfully."
+    },
+    "security": {
+      "title": "Privacy",
+      "description": "Everything stays on your device. Only the final notes are sent to your Blinko workspace."
+    }
+  }
+}

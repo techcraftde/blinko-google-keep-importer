@@ -3,7 +3,7 @@
   "name": "blinko-plugin-google-keep-importer",
   "author": "techcraftde",
   "url": "https://github.com/techcraftde/blinko-google-keep-importer",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "minAppVersion": "0.0.0",
   "displayName": {
     "default": "Blinko: Google Keep Importer",
@@ -14,8 +14,7 @@
     "de": "Importiert Google Keep Notizen inkl. Tags und Formatierung in Blinko."
   },
   "readme": {
-    "default": "README.md",
-    "de": "README_DE.md"
+    "default": "README.md"
   },
-  "main": "src/index.ts"
+  "main": "src/index.tsx"
 }

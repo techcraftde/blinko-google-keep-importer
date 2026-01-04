@@ -1,17 +1,14 @@
 import { defineConfig } from 'vite';
 import preact from '@preact/preset-vite';
+import blinkoPlugin from 'vite-plugin-blinko';
 
-export default defineConfig({
-  plugins: [preact()],
+export default defineConfig(() => ({
+  plugins: [
+    preact(),
+    ...blinkoPlugin()
+  ],
   build: {
-    lib: {
-      entry: './src/index.ts',
-      formats: ['system'],
-      fileName: () => 'index.js'
-    },
-    rollupOptions: {
-      external: ['react', '@blinkospace/sdk', 'systemjs']
-    },
-    outDir: 'release'
+    outDir: 'release',
+    emptyOutDir: true
   }
-});
+}));

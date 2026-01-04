@@ -2,8 +2,12 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "ESNext",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
     "lib": [
-      "ES2020"
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
     ],
     "declaration": true,
     "outDir": "./dist",
@@ -13,7 +17,10 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "types": [
+      "systemjs"
+    ]
   },
   "include": [
     "src/**/*"
