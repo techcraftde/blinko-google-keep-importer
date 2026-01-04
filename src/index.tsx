@@ -76,7 +76,7 @@ System.register([], (exports) => ({
       }
 
       destroy() {
-        this.#dialogClose?.();
+        this.dialogClose?.();
         if (window.Blinko.removeToolBarIcon) {
           window.Blinko.removeToolBarIcon(plugin.id);
         }
