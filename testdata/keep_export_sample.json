@@ -1,0 +1,18 @@
+{
+  "notes": [
+    {
+      "id": "n1",
+      "title": "Meeting with team",
+      "textContent": "<p>Agenda: <strong>Sprint planning</strong></p>",
+      "labels": ["work", "planning"],
+      "createdTime": "2023-07-01T12:00:00Z",
+      "updatedTime": "2023-07-02T12:00:00Z"
+    },
+    {
+      "id": "n2",
+      "title": "Grocery list",
+      "textContent": "<ul><li>Milk</li><li>Bread</li></ul>",
+      "labels": ["personal", "shopping"]
+    }
+  ]
+}
