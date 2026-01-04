@@ -1,0 +1,73 @@
+{
+  "toolbar": {
+    "tooltip": "Google Keep Notizen importieren"
+  },
+  "dialog": {
+    "title": "Google Keep Import",
+    "subtitle": "Lade dein Google-Takeout-ZIP hoch und übertrage Notizen, Labels und Anhänge direkt nach Blinko.",
+    "dropzone": {
+      "title": "Google Takeout ZIP auswählen",
+      "instructions": "Ziehe die exportierte Datei hierher oder klicke, um sie auszuwählen.",
+      "cta": "Datei auswählen",
+      "hint": "Unterstützt werden unveränderte ZIP-Exporte aus Google Takeout → Keep."
+    },
+    "summary": {
+      "title": "Analyse",
+      "notes": "importierbare Notizen",
+      "labels": "erkannte Labels",
+      "skipped": "Übersprungen",
+      "file": "Ausgewählte Datei",
+      "lastModified": "Geändert",
+      "analyzedAt": "Analysiert"
+    },
+    "status": {
+      "idle": "Wähle eine ZIP-Datei aus",
+      "parsing": "ZIP-Datei wird verarbeitet …",
+      "ready": "Bereit für den Import",
+      "importing": "Importiere Notizen …",
+      "completed": "Import abgeschlossen",
+      "error": "Import fehlgeschlagen"
+    },
+    "instructions": {
+      "title": "So funktioniert der Import",
+      "export": "Rufe takeout.google.com auf und wähle Google Keep.",
+      "zip": "Exportiere als ZIP und aktiviere JSON-Daten sowie Medien-Dateien.",
+      "import": "Ziehe das ZIP hierher oder wähle es über den Button, um den Import zu starten."
+    },
+    "errors": {
+      "invalidFile": "Bitte eine ZIP-Datei aus Google Keep auswählen.",
+      "noNotes": "In diesem Archiv wurden keine importierbaren Notizen gefunden.",
+      "generic": "Beim Analysieren ist ein Fehler aufgetreten."
+    },
+    "progress": {
+      "currentNote": "Aktuelle Notiz"
+    },
+    "skipped": {
+      "title": "Übersprungene Notizen",
+      "reason": {
+        "trashed": "Notiz liegt im Papierkorb",
+        "empty": "Kein Inhalt vorhanden",
+        "error": "Notiz konnte nicht gelesen werden"
+      },
+      "empty": "Keine übersprungenen Notizen",
+      "more": "weitere"
+    },
+    "logs": {
+      "title": "Import-Protokoll",
+      "empty": "Noch kein Import gestartet"
+    },
+    "buttons": {
+      "import": "Notizen importieren",
+      "reset": "Zurücksetzen",
+      "close": "Schließen"
+    },
+    "toast": {
+      "importPartial": "Import abgeschlossen, einige Notizen konnten nicht übernommen werden.",
+      "importSuccess": "Alle Notizen wurden erfolgreich importiert."
+    },
+    "security": {
+      "title": "Datenschutz",
+      "description": "Alle Daten bleiben lokal auf deinem Gerät. Es werden ausschließlich fertige Notizen zu Blinko übertragen."
+    }
+  }
+}
