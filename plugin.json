@@ -1,0 +1,16 @@
+{
+  "id": "blinko-google-keep-importer",
+  "name": "Google Keep Importer",
+  "version": "0.0.1",
+  "description": "Import your Google Keep notes directly into Blinko",
+  "author": "pascalhorn98@gmail.com",
+  "homepage": "https://github.com/Techcraftde/blinko-google-keep-importer",
+  "repository": "https://github.com/Techcraftde/blinko-google-keep-importer",
+  "license": "MIT",
+  "type": "importer",
+  "capabilities": {
+    "import": true,
+    "export": false,
+    "sync": false
+  }
+}
