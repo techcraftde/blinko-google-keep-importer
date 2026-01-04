@@ -1,16 +1,24 @@
 {
-  "id": "blinko-google-keep-importer",
+  "id": "google-keep-importer",
   "name": "Google Keep Importer",
-  "version": "0.0.1",
-  "description": "Import your Google Keep notes directly into Blinko",
-  "author": "pascalhorn98@gmail.com",
-  "homepage": "https://github.com/Techcraftde/blinko-google-keep-importer",
-  "repository": "https://github.com/Techcraftde/blinko-google-keep-importer",
-  "license": "MIT",
-  "type": "importer",
-  "capabilities": {
-    "import": true,
-    "export": false,
-    "sync": false
-  }
+  "description": "Importiert Google Keep Notizen inklusive Tags, Formatierungen und Anhängen",
+  "version": "1.0.0",
+  "author": "Dein Name",
+  "icon": "icon.svg",
+  "permissions": ["notes:create", "notes:update"],
+  "settings": [
+    {
+      "key": "googleKeepFolder",
+      "name": "Google Keep Ordner",
+      "type": "text",
+      "description": "Pfad zum Google Takeout Keep-Ordner (JSON-Dateien)"
+    }
+  ],
+  "commands": [
+    {
+      "id": "import-google-keep",
+      "name": "Google Keep importieren",
+      "description": "Importiert alle Google Keep Notizen"
+    }
+  ]
 }
