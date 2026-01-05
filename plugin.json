@@ -1,5 +1,4 @@
 {
-  "id": "google-keep-importer",
   "name": "blinko-plugin-google-keep-importer",
   "author": "techcraftde",
   "url": "https://github.com/techcraftde/blinko-google-keep-importer",
@@ -15,6 +14,5 @@
   },
   "readme": {
     "default": "README.md"
-  },
-  "main": "src/index.tsx"
+  }
 }

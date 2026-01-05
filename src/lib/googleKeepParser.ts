@@ -64,7 +64,7 @@ turndown.keep(['span', 'div']);
 
 turndown.addRule('strikethrough', {
   filter: ['s', 'del'],
-  replacement(content) {
+  replacement(content: string) {
     return `~~${content}~~`;
   }
 });
@@ -136,7 +136,14 @@ export async function parseGoogleKeepZip(file: File, onProgress?: ProgressCallba
   return { notes, skipped };
 }
 
-async function convertKeepNote(note: KeepNote, filePath: string, zip: JSZip): Promise<ImportableBlinkoNote | null> {
+export async function convertKeepJsonNote(
+  note: unknown,
+  filePath = 'keep-note.json'
+): Promise<ImportableBlinkoNote | null> {
+  return convertKeepNote(note as KeepNote, filePath);
+}
+
+async function convertKeepNote(note: KeepNote, filePath: string, zip?: JSZip): Promise<ImportableBlinkoNote | null> {
   const sections: string[] = [];
 
   const primaryText = buildPrimaryText(note.textContent);
@@ -206,8 +213,9 @@ function buildAnnotations(annotations?: Array<{ description?: string }>) {
   return `## Annotationen\n${rows.map((entry) => `- ${entry}`).join('\n')}`;
 }
 
-async function buildAttachments(attachments: KeepAttachmentEntry[] | undefined, zip: JSZip) {
+async function buildAttachments(attachments: KeepAttachmentEntry[] | undefined, zip?: JSZip) {
   if (!attachments?.length) return '';
+  if (!zip) return '';
 
   const rows: string[] = [];
 

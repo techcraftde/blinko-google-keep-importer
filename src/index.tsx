@@ -7,6 +7,8 @@ import en from './locales/en.json';
 import de from './locales/de.json';
 import { KeepImporterDialog } from './components/KeepImporterDialog';
 
+const PLUGIN_ID = plugin.name;
+
 const ICON = `
 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M6 3h12a2 2 0 0 1 2 2v13a1 1 0 0 1-1 1h-3l-3 3-3-3H5a1 1 0 0 1-1-1V5a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -43,7 +45,7 @@ System.register([], (exports) => ({
           width: 560,
           content: () => {
             const container = document.createElement('div');
-            container.dataset.plugin = plugin.id;
+            container.dataset.plugin = PLUGIN_ID;
             this.dialogContainers.add(container);
             render(<KeepImporterDialog onClose={cleanup} />, container);
             return container;
@@ -60,7 +62,7 @@ System.register([], (exports) => ({
 
       private registerToolbarIcon() {
         window.Blinko.addToolBarIcon({
-          name: plugin.id,
+          name: PLUGIN_ID,
           placement: 'top',
           tooltip: window.Blinko.i18n?.t('toolbar.tooltip') ?? 'Google Keep Import',
           icon: ICON,
@@ -78,7 +80,7 @@ System.register([], (exports) => ({
       destroy() {
         this.dialogClose?.();
         if (window.Blinko.removeToolBarIcon) {
-          window.Blinko.removeToolBarIcon(plugin.id);
+          window.Blinko.removeToolBarIcon(PLUGIN_ID);
         }
       }
     });

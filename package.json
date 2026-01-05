@@ -1,12 +1,29 @@
 {
   "name": "blinko-plugin-google-keep-importer",
   "version": "1.0.0",
-  "description": "Importiert Google Keep Notizen mit Tags, Formatierungen und Anhängen nach Blinko",
+  "description": "Import Google Keep notes into Blinko",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techcraftde/blinko-google-keep-importer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/techcraftde/blinko-google-keep-importer/issues"
+  },
+  "homepage": "https://github.com/techcraftde/blinko-google-keep-importer#readme",
+  "keywords": [
+    "blinko",
+    "blinko-plugin",
+    "google-keep",
+    "import"
+  ],
   "type": "module",
   "main": "release/index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "blinko-cli dev server",
+    "dev:vite": "vite",
+    "build": "vite build --mode production",
+    "release:publish": "vite build --mode production && blinko-cli release plugin",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -19,6 +36,9 @@
     "@types/jszip": "^3.4.1",
     "@types/node": "^22.10.2",
     "@types/systemjs": "^6.1.6",
+    "@types/turndown": "^5.0.5",
+    "blinko": "^0.0.14",
+    "blinko-cli": "^0.0.4",
     "systemjs": "^6.15.1",
     "typescript": "^5.7.2",
     "vite": "^4.4.4",

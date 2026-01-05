@@ -8,7 +8,6 @@ export default defineConfig(() => ({
     ...blinkoPlugin()
   ],
   build: {
-    outDir: 'release',
     emptyOutDir: true
   }
 }));
