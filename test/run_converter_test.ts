@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 
-import { convertKeepJsonNote } from '../src/lib/googleKeepParser';
+import { convertKeepJsonNote } from '../src/lib/googleKeepParser.ts';
 
 async function run() {
   const jsonPath = new URL('../testdata/keep_export_sample.json', import.meta.url);
