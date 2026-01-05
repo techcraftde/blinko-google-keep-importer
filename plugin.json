@@ -2,7 +2,7 @@
   "name": "blinko-plugin-google-keep-importer",
   "author": "techcraftde",
   "url": "https://github.com/techcraftde/blinko-google-keep-importer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minAppVersion": "0.0.0",
   "displayName": {
     "default": "Blinko: Google Keep Importer",

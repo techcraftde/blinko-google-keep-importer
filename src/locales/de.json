@@ -69,5 +69,14 @@
       "title": "Datenschutz",
       "description": "Alle Daten bleiben lokal auf deinem Gerät. Es werden ausschließlich fertige Notizen zu Blinko übertragen."
     }
+  },
+  "settings": {
+    "import": {
+      "sectionLabel": "Import",
+      "title": "Google Keep Notizen importieren",
+      "description": "Starte den Import direkt aus den Einstellungen, um Notizen, Labels und Anhänge aus deinem Google-Takeout-ZIP zu übertragen.",
+      "button": "Google Keep Import starten",
+      "hint": "Du findest den Importer alternativ über das Toolbar-Symbol oben in Blinko."
+    }
   }
 }

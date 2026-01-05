@@ -69,5 +69,14 @@
       "title": "Privacy",
       "description": "Everything stays on your device. Only the final notes are sent to your Blinko workspace."
     }
+  },
+  "settings": {
+    "import": {
+      "sectionLabel": "Import",
+      "title": "Import Google Keep notes",
+      "description": "Launch the importer from the settings to move notes, labels and attachments from your Google Takeout ZIP.",
+      "button": "Start Google Keep import",
+      "hint": "The same importer is also available via the toolbar icon at the top of Blinko."
+    }
   }
 }

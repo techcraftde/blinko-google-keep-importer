@@ -6,6 +6,7 @@ import plugin from '../plugin.json';
 import en from './locales/en.json';
 import de from './locales/de.json';
 import { KeepImporterDialog } from './components/KeepImporterDialog';
+import { ImporterSettingsPanel } from './components/ImporterSettingsPanel';
 
 const PLUGIN_ID = plugin.name;
 
@@ -20,11 +21,19 @@ const ICON = `
 System.register([], (exports) => ({
   execute: () => {
     exports('default', class GoogleKeepImporterPlugin {
-      withSettingPanel = false;
+      withSettingPanel = true;
       private dialogContainers = new Set<HTMLElement>();
       private dialogClose?: () => void;
 
+      renderSettingPanel = () => {
+        const container = document.createElement('div');
+        container.dataset.plugin = PLUGIN_ID;
+        render(<ImporterSettingsPanel onOpenImporter={this.openDialog} />, container);
+        return container;
+      };
+
       constructor() {
+
         Object.assign(this, plugin);
       }
 

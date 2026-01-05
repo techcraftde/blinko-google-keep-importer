@@ -16,8 +16,8 @@ Import Google Keep notes directly into Blinko, including labels, checklists and 
 1. Open [Google Takeout](https://takeout.google.com), select **Google Keep**, choose `ZIP` as archive type and include both JSON data and media attachments.
 2. Download the archive and keep it unchanged (do not unzip).
 3. In Blinko, install this plugin from the Marketplace via the GitHub URL of this repository.
-4. Use the new toolbar button "Google Keep Import" and drop your Takeout ZIP into the dialog.
-5. Review the detected notes, skipped entries and log output, then run the import.
+4. Launch the importer either from the toolbar button "Google Keep Import" or via **Settings → Import → Start Google Keep import**.
+5. Drop your Takeout ZIP into the dialog, review the detected notes, skipped entries and log output, then run the import.
 
 ## 🧑‍💻 Development
 
